@@ -4,49 +4,46 @@
 
 <p align="center"><code>C++</code> · <code>Qt</code> · <code>Python</code></p>
 
-<p align="center"><sub>Undergraduate · C++ / Qt development · Exploring software verification &amp; agent reliability</sub></p>
+<p align="center"><sub>Undergraduate · Software development · Exploring workflow verification &amp; agent reliability</sub></p>
 
 ---
 
-- 🎓 **本科在读**，持续学习数据结构算法、软件开发，Agent工作流形式化验证与修复
-- 🛠️ **正在维护**词汇学习工具和小型工作流验证工具
-- 🔍 **关注的问题**：程序执行过程为什么出错，以及我们能用什么证据判断它是否可靠，并最终落实到修复工作
+本科在读，使用 C++、Qt 和 Python 开发小型工具。目前关注 Agent 工作流的可靠性：执行是否符合规则，以及规则本身是否会误拦或漏检。
 
-## 🚀 代表项目
+## 代表项目
 
-### 🛡️ [verification-gate-review](https://github.com/yuye05/verification-gate-review)
+### [verification-gate-review](https://github.com/yuye05/verification-gate-review)
 
-`Python` · `有限状态模型` · `执行轨迹`
+`Python` · `有限状态模型` · `执行轨迹` · `规则体检`
 
-检查小型工作流的模型与实际执行记录，定位违反规则的步骤
+检查有限状态工作流与执行轨迹，并通过独立标注的案例，发现验证规则的误拦与漏检。
 
-> 模型检查通过了，程序仍然可能“未付款就发货”。用一个正反例，看清两者的区别
+> 模型检查通过，规则仍可能放过违规交付，或拦住正常的只读操作。
 
-**从这里开始 →** [安装与演示](https://github.com/yuye05/verification-gate-review#快速开始) · [结果对比](https://github.com/yuye05/verification-gate-review#演示结果)
+当前提供脚本控制的编程工作流演示，正在探索向真实 Agent 场景接入。
 
-<sub>检查范围是声明的有限模型与已记录的顺序轨迹；日志完整性和状态映射仍需人工核对</sub>
+**从这里开始 →** [规则体检演示](https://github.com/yuye05/verification-gate-review#试验功能规则体检) · [安装说明](https://github.com/yuye05/verification-gate-review#快速开始) · [订单正反例](https://github.com/yuye05/verification-gate-review#演示结果)
 
-### 📚 [qt-vocab-system](https://github.com/yuye05/qt-vocab-system)
+### [qt-vocab-system](https://github.com/yuye05/qt-vocab-system)
 
 `C++17` · `Qt 6` · `桌面应用`
 
-一个英汉词汇学习工具，把查词、三种测验、生词本和错题复习串成完整的学习流程，也是我的 C++ / Qt 开发实践
+英汉词汇学习桌面应用，支持查词、三种测验、生词本和错题复习，也是我的 C++ / Qt 开发实践。
 
 **从这里开始 →** [界面预览](https://github.com/yuye05/qt-vocab-system#界面预览) · [编译运行](https://github.com/yuye05/qt-vocab-system#编译运行)
 
-## 🌱 正在探索
+## 当前方向
 
-- **开发基础** — 数据结构、C++ 与 Qt，练习从功能实现到测试的完整过程
-- **软件验证** — 理解模型、断言、测试和执行轨迹分别能说明什么
-- **Agent 可靠性** — 阅读相关工作，从具体失败案例中寻找值得验证的问题
+- **规则质量诊断** — 从有限状态模型与案例出发，定位规则的误拦和漏检。
+- **Agent 失败分析** — 阅读相关工作，探索执行证据如何帮助失败定位，并为后续修复提供依据。
 
-这些方向还在学习和探索中，我会把能复现的例子逐步整理进项目
+研究方向仍在探索中，具体实现和可复现案例见项目仓库。
 
 ---
 
-## 💬 交流与反馈
+## 交流与反馈
 
-欢迎聊具体的使用场景，也欢迎指出问题。带上运行环境、复现步骤和预期结果，会更方便一起排查
+欢迎交流使用场景、报告问题或提出改进建议。
 
-- 🛡️ [反馈 verification 问题](https://github.com/yuye05/verification-gate-review/issues)
-- 📚 [反馈词汇工具问题](https://github.com/yuye05/qt-vocab-system/issues)
+- [verification Issues](https://github.com/yuye05/verification-gate-review/issues)
+- [Qt 词汇工具 Issues](https://github.com/yuye05/qt-vocab-system/issues)
